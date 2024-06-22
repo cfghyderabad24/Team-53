@@ -45,12 +45,8 @@ function Login() {
                   {errors.password?.type === 'required' && <h5 className='mx-4 text-start text-danger'>Password is required</h5>}
                 </div>
                 <button type="submit" className="btn btn-dark fs-5 fw-medium m-3">Login</button>
-                <p className='lead text-center fw-semibold fs-3 text-primary'>
-                  New User !!
-                  <Link to='/register' className='fs-4 fw-semibold'>
-                    <p className='kh fw-medium text-primary'> Register Here!</p>
-                  </Link>
-                </p>
+                
+                
               </form>
             </div>
           </div>

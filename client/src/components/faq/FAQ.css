@@ -1,0 +1,55 @@
+/* src/components/FAQ.css */
+.wrapper {
+    padding: 20px;
+  }
+  
+  .faq {
+    margin-bottom: 20px;
+  }
+  
+  .accordion {
+    background-color: #f1f1f1;
+    color: #333;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .accordion:hover {
+    background-color: #ddd;
+  }
+  
+  .accordion.active {
+    background-color: #ddd;
+  }
+  
+  .accordion::after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .accordion.active::after {
+    content: '\2796'; /* Unicode character for "minus" sign (-) */
+  }
+  
+  .pannel {
+    display: none;
+    padding: 18px;
+    background-color: white;
+    overflow: hidden;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .pannel.active {
+    display: block;
+  }
+  
