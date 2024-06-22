@@ -1,0 +1,84 @@
+.w {
+    width: 100%;
+    background-color: rgb(62, 102, 101);
+  }
+  
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: white;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adds gap between nav items */
+  }
+  
+  .nav-link {
+    font-size: 2rem; /* Increased font size */
+    margin: 0 10px; /* Adds horizontal margin between nav links */
+  }
+  
+  .nav-link.ppp {
+    cursor: pointer;
+  }
+  
+  .nav-link:hover {
+    color: #f8f9fa;
+  }
+  
+  .nav-link.active {
+    color: rgb(3, 3, 3) !important;
+    font-size: 2.1rem; /* Increased font size */
+    font-weight: 800;
+  }
+  
+  .ppp:hover {
+    color: black !important;
+  }
+  
+  .navbar-brand {
+    font-size: 2.3rem; /* Increased font size */
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .lead.fs-3.ml-5.fw-1 {
+    margin-left: 20px;
+  }
+  
+  .lead.fs-3.me-3.fw-1 {
+    margin-right: 20px;
+  }
+  
+  .image {
+    width: 80px;
+    border-radius: 50%;
+  }
+  
+  @media (max-width: 991.98px) {
+    .navbar-nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-link {
+      margin: 10px 0; /* Adjust margin for smaller screens */
+      font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
+  
+    .lead.fs-3.ml-5.fw-1,
+    .lead.fs-3.me-3.fw-1 {
+      margin: 10px 0; /* Adjust margin for smaller screens */
+      font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
