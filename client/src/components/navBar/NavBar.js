@@ -164,12 +164,12 @@ function NavBar() {
                   <li className="nav-item">
                     <NavLink className="nav-link text-white fw-semibold" to='/' style={{ fontSize: '2rem' }}>Home</NavLink>
                   </li>
-                  <li className='nav-item'>
+                  {/* <li className='nav-item'>
                     <button className='nav-link ppp text-white fw-semibold' onClick={scrollToAbout} style={{ fontSize: '2rem' }}>About Us</button>
                   </li>
                   <li className='nav-item'>
                     <button className='nav-link ppp text-white fw-semibold' onClick={scrollToContact} style={{ fontSize: '2rem' }}>Contact Us</button>
-                  </li>
+                  </li> */}
                   <li className="nav-item">
                     <NavLink className="nav-link text-white fw-semibold" to='/Login' style={{ fontSize: '2rem' }}>Login</NavLink>
                   </li>

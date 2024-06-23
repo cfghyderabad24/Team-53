@@ -70,10 +70,10 @@ const Home = () => {
       </Row>
       
       {/* FAQ Section */}
+{/*       
       <hr className="divider" />
       <FAQ />
       
-      {/* Feedback Form Section */}
       <hr className="divider" />
       <Container className="feedback-form-container py-4 border border-dark">
         <Row>
@@ -96,7 +96,7 @@ const Home = () => {
             </form>
           </Col>
         </Row>
-      </Container>
+      </Container> */}
     </Container>
   );
 };

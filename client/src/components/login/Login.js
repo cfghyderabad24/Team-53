@@ -20,10 +20,10 @@ function Login() {
     if (loginUserStatus === true) {
       console.log(currentUser.userType);
       if (currentUser.userType === 'admin') {
-        navigate("/admin-profile"); // Redirect to admin profile if login is successful
+        navigate("/admin-home/"); // Redirect to admin profile if login is successful
       }
     }
-  }, [loginUserStatus]);
+  }, [loginUserStatus, currentUser, navigate]);
 
   return (
     <div className='abc p-3'>
@@ -45,8 +45,6 @@ function Login() {
                   {errors.password?.type === 'required' && <h5 className='mx-4 text-start text-danger'>Password is required</h5>}
                 </div>
                 <button type="submit" className="btn btn-dark fs-5 fw-medium m-3">Login</button>
-                
-                
               </form>
             </div>
           </div>

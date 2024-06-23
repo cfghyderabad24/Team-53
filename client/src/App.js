@@ -4,6 +4,7 @@ import Home from './components/home/Home.js'
 import { createBrowserRouter } from 'react-router-dom'
 import RootLayout from './components/RouteLayout'
 import { RouterProvider } from 'react-router-dom'
+import AdminHome from './components/admin-home/AdminHome.js'
 function App() {
   const router=createBrowserRouter([
     {
@@ -17,6 +18,10 @@ function App() {
         {
           path:"login",
           element:<Login/>
+        },
+        {
+          path: "admin-home",
+          element: <AdminHome />
         }
       ]
     }
