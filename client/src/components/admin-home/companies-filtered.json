@@ -3,35 +3,5 @@
         "water": true,
         "sanitation": true,
         "health": true
-    },
-    "HDFC Bank Limited": {
-        "water": true,
-        "sanitation": true,
-        "health": true
-    },
-    "ICICI Bank Limited": {
-        "water": true,
-        "sanitation": true,
-        "health": true
-    },
-    "Bharti Airtel Limited": {
-        "water": true,
-        "sanitation": true,
-        "health": true
-    },
-    "State Bank of India": {
-        "water": true,
-        "sanitation": true,
-        "health": true
-    },
-    "Infosys Limited": {
-        "water": true,
-        "sanitation": true,
-        "health": true
-    },
-    "Life Insurance Corporation Of India": {
-        "water": true,
-        "sanitation": false,
-        "health": true
     }
 }
