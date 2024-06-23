@@ -5,6 +5,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import RootLayout from './components/RouteLayout'
 import { RouterProvider } from 'react-router-dom'
 import AdminHome from './components/admin-home/AdminHome.js'
+import FileUpload from './components/FileUpload.js'
 function App() {
   const router=createBrowserRouter([
     {
@@ -22,7 +23,13 @@ function App() {
         {
           path: "admin-home",
           element: <AdminHome />
+        },
+        {
+          path:"data",
+          element:<FileUpload/>
         }
+
+
       ]
     }
   ])

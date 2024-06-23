@@ -177,13 +177,13 @@ function NavBar() {
               ) : (
                 <>
                   <li className="nav-item">
-                    <NavLink className="nav-link text-white fw-semibold" to='/' style={{ fontSize: '2rem' }}>Home</NavLink>
+                    <NavLink className="nav-link text-white fw-semibold" to='admin-home' style={{ fontSize: '2rem' }}>Data</NavLink>
                   </li>
                   <li className="nav-item">
-                    <span className="lead fs-3 ml-5 fw-1" style={{ fontWeight: 'bold', fontSize: '2rem', textTransform: 'capitalize', fontFamily: 'fantasy' }}>
-                      {currentUser.username}
-                      <sup style={{ color: 'var(--dark-green)', fontSize: '1rem' }}>({currentUser.userType})</sup>
-                    </span>
+                    <NavLink className="nav-link text-white fw-semibold" to='data' style={{ fontSize: '2rem' }}>PostEmail</NavLink>
+                  </li>
+                  <li className="nav-item">
+                    
                     <NavLink className="nav-link lead fs-3 me-3 fw-1" to="Login" style={{ color: "var(--light-grey)", fontSize: '2rem' }} onClick={LogOut}>
                       --LogOut
                     </NavLink>

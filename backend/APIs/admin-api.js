@@ -38,4 +38,31 @@ adminApp.post('/login', expressAsyncHandler(async (req, res) => {
 
     }
 }));
+adminApp.post("/send-email", expressAsyncHandler(async (req, res) => {
+    const { to, subject, message } = req.body;
+
+    const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: process.env.EMAIL, // Your Gmail email
+            pass: process.env.PASSWORD // Your Gmail password
+        }
+    });
+
+    const mailOptions = {
+        from: process.env.EMAIL, // Sender email
+        to: "udvisha2004@gmail.com", // Recipient email
+        subject: "something", // Subject line
+        text: "about the project " // Plain text body
+    };
+
+    try {
+        await transporter.sendMail(mailOptions);
+        console.log('Email sent successfully to', to);
+        res.status(200).send({ message: 'Email sent successfully' });
+    } catch (error) {
+        console.error('Error sending email:', error);
+        res.status(500).send({ message: 'Failed to send email' });
+    }
+}));
 module.exports=adminApp;
